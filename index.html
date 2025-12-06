@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Bro - Digital Core</title>
+    <style>
+        /* Define the classic Matrix green color palette */
+        :root {
+            --matrix-green: #00FF41;
+            --dark-green: #008000;
+            --background-color: #000;
+        }
+
+        /* Base Styling: Center Everything */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+            color: var(--matrix-green);
+            background-color: var(--background-color);
+            height: 100vh;
+            /* Flexbox for absolute centering of the ASCII card */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Background Image Container - Falling Code Texture */
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+            /* New URL for the falling code static image */
+            background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/15697.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.6) contrast(1.2); /* Darken and enhance the code pattern */
+        }
+
+        /* ASCII Card Container */
+        .ascii-card {
+            background-color: rgba(0, 0, 0, 0.9); /* High opacity background for maximum contrast */
+            padding: 30px;
+            border: 2px solid var(--matrix-green); 
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.9); /* Intense green glow */
+            text-align: center; /* Ensures content (h1 and pre) is centered */
+            max-width: 90%;
+            overflow: auto; 
+            max-height: 90vh; 
+        }
+
+        /* Preformatted text style for the ASCII art */
+        pre {
+            font-size: 8px; 
+            line-height: 1; 
+            white-space: pre;
+            /* Center the block of ASCII art */
+            margin: 0 auto; 
+            display: inline-block; /* Allows margin: auto to work for centering */
+            color: var(--matrix-green);
+            text-shadow: 0 0 5px var(--dark-green);
+        }
+
+        /* Simple Message below the ASCII art */
+        h1 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--matrix-green); 
+            text-shadow: 0 0 8px var(--matrix-green);
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            pre {
+                font-size: 5px; 
+            }
+            h1 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="ascii-card">
+        <pre>
+ ___  ___  ________  ________  ________  ___    ___                                           
+|\  \|\  \|\   __  \|\   __  \|\   __  \|\  \  /  /|                                          
+\ \  \\\  \ \  \|\  \ \  \|\  \ \  \|\  \ \  \/  / /                                          
+ \ \   __  \ \   __  \ \   ____\ \   ____\ \    / /                                           
+  \ \  \ \  \ \  \ \  \ \  \___|\ \  \___|\/  /  /                                            
+   \ \__\ \__\ \__\ \__\ \__\    \ \__\ __/  / /                                              
+    \|__|\|__|\|__|\|__|\|__|     \|__||\___/ /                                               
+                                       \|___|/                                                
+                                                                                              
+                                                                                              
+ ________  ___  ________  _________  ___  ___  ________  ________      ___    ___             
+|\   __  \|\  \|\   __  \|\___   ___\\  \|\  \|\   ___ \|\   __  \    |\  \  /  /|            
+\ \  \|\ /\ \  \ \  \|\  \|___ \  \_\ \  \\\  \ \  \_|\ \ \  \|\  \   \ \  \/  / /            
+ \ \   __  \ \  \ \   _  _\   \ \  \ \ \   __  \ \  \ \\ \ \   __  \   \ \    / /             
+  \ \  \|\  \ \  \ \  \\  \|   \ \  \ \ \  \ \  \ \  \_\\ \ \  \ \  \   \/  /  /              
+   \ \_______\ \__\ \__\\ _\    \ \__\ \ \__\ \__\ \_______\ \__\ \__\__/  / /                
+    \|_______|\|__|\|__|\|__|    \|__|  \|__|\|__|\|_______|\|__|\|__|\___/ /                 
+                                                                     \|___|/                  
+                                                                                              
+                                                                                              
+ ________  ___      ___    ___ ___  ___  ________  ___  ___                                   
+|\   __  \|\  \    |\  \  /  /|\  \|\  \|\   ____\|\  \|\  \                                  
+\ \  \|\  \ \  \   \ \  \/  / | \  \\\  \ \  \___|\ \  \\\  \                                 
+ \ \   ____\ \  \   \ \    / / \ \  \\\  \ \_____  \ \   __  \                                
+  \ \  \___|\ \  \   \/  /  /   \ \  \\\  \|____|\  \ \  \ \  \                               
+   \ \__\    \ \__\__/  / /      \ \_______\____\_\  \ \__\ \__\                              
+    \|__|     \|__|\___/ /        \|_______|\_________\|__|\|__|                              
+                  \|___|/                  \|_________|                                       
+                                                                                              
+                                                                                              
+ ___  ___  _______   ________  _______            ___    ___ ________  ___  ___  ________     
+|\  \|\  \|\  ___ \ |\   __  \|\  ___ \          |\  \  /  /|\   __  \|\  \|\  \|\   __  \    
+\ \  \\\  \ \   __/|\ \  \|\  \ \   __/|         \ \  \/  / | \  \|\  \ \  \\\  \ \  \|\  \   
+ \ \   __  \ \  \_|/_\ \   _  _\ \  \_|/__        \ \    / / \ \  \\\  \ \  \\\  \ \   _  _\  
+  \ \  \ \  \ \  \_|\ \ \  \\  \\ \  \_|\ \        \/  /  /   \ \  \\\  \ \  \\\  \ \  \\  \| 
+   \ \__\ \__\ \_______\ \__\\ _\\ \_______\     __/  / /      \ \_______\ \_______\ \__\\ _\ 
+    \|__|\|__|\|_______|\|__|\|__|\|_______|    |\___/ /        \|_______|\|_______|\|__|\|__|
+                                                \|___|/                                       
+                                                                                              
+                                                                                              
+ ________  ___  ________ _________                                                            
+|\   ____\|\  \|\  _____\\___   ___\                                                          
+\ \  \___|\ \  \ \  \__/\|___ \  \_|                                                          
+ \ \  \  __\ \  \ \   __\    \ \  \                                                           
+  \ \  \|\  \ \  \ \  \_|     \ \  \                                                          
+   \ \_______\ \__\ \__\       \ \__\                                                         
+    \|_______|\|__|\|__|        \|__|                                                         
+                                                                                              
+                                                                                              
+ ________  ___       ___  ________  ___  __            _________  ___  ___  _______           
+|\   ____\|\  \     |\  \|\   ____\|\  \|\  \         |\___   ___\\  \|\  \|\  ___ \          
+\ \  \___|\ \  \    \ \  \ \  \___|\ \  \/  /|_       \|___ \  \_\ \  \\\  \ \   __/|         
+ \ \  \    \ \  \    \ \  \ \  \    \ \   ___  \           \ \  \ \ \   __  \ \  \_|/__       
+  \ \  \____\ \  \____\ \  \ \  \____\ \  \\ \  \           \ \  \ \ \  \ \  \ \  \_|\ \      
+   \ \_______\ \_______\ \__\ \_______\ \__\\ \__\           \ \__\ \ \__\ \__\ \_______\     
+    \|_______|\|_______|\|__|\|_______|\|__| \|__|            \|__|  \|__|\|__|\|_______|     
+                                                                                              
+                                                                                              
+ ___       ___  ________   ___  __                                                            
+|\  \     |\  \|\   ___  \|\  \|\  \                                                          
+\ \  \    \ \  \ \  \\ \  \ \  \/  /|_                                                        
+ \ \  \    \ \  \ \  \\ \  \ \   ___  \                                                       
+  \ \  \____\ \  \ \  \\ \  \ \  \\ \  \                                                      
+   \ \_______\ \__\ \__\\ \__\ \__\\ \__\                                                     
+    \|_______|\|__|\|__| \|__|\|__| \|__|                                                     
+                                                                                              
+                                                                                              
+ ________  _______   ___       ________  ___       __                                         
+|\   __  \|\  ___ \ |\  \     |\   __  \|\  \     |\  \                                       
+\ \  \|\ /\ \   __/|\ \  \    \ \  \|\  \ \  \    \ \  \                                      
+ \ \   __  \ \  \_|/_\ \  \    \ \  \\\  \ \  \  __\ \  \                                     
+  \ \  \|\  \ \  \_|\ \ \  \____\ \  \\\  \ \  \|\__\_\  \                                    
+   \ \_______\ \_______\ \_______\ \_______\ \____________\                                   
+    \|_______|\|_______|\|_______|\|_______|\|____________|                                   
+</pre>
+        <h1>SYSTEM INITIATED: HAPPY BIRTHDAY BROTHER</h1>
+    </div>
+
+</body>
+</html>
